@@ -11,7 +11,7 @@ class Flat(models.Model):
     owner_pure_phone = PhoneNumberField(
         "Нормальзованный номер владельца",
         blank=True, null=True, db_index=True)
-    new_building = models.NullBooleanField()
+    new_building = models.NullBooleanField(db_index=True)
     created_at = models.DateTimeField(
         'Когда создано объявление',
         default=timezone.now,
