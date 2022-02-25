@@ -1,26 +1,23 @@
-# Сайт риэлторского агентства
+# Site of a real estate agency 
 
-Сайт находится в разработке, поэтому доступна только страница со списком квартир и админка для наполнения БД.
+The site is under construction, so only a page with a list of apartments and an admin panel for filling the database is available. 
 
-## Запуск
+## Run 
 
-- Скачайте код
-- Установите зависимости командой `pip install -r requirements.txt`
-- Создайте файл базы данных и сразу примените все миграции командой `python3 manage.py migrate`
-- Запустите сервер командой `python3 manage.py runserver`
+- Download the code 
+- Install dependencies with `pip install -r requirements.txt` 
+- Create a database file and apply all migrations immediately with `python3 manage.py migrate` 
+- Start the server with `python3 manage.py runserver` 
 
-## Переменные окружения
+## Environment Variables 
 
-Часть настроек проекта берётся из переменных окружения. Чтобы их определить, создайте файл `.env` рядом с `manage.py` и запишите туда данные в таком формате: `ПЕРЕМЕННАЯ=значение`.
+Part of the project settings is taken from the environment variables. To define them, create a `.env` file next to `manage.py` and write data there in the following format: `VARIABLE=value`. 
 
-Доступны 3 переменные:
-- `DEBUG` — дебаг-режим. Поставьте True, чтобы увидеть отладочную информацию в случае ошибки.
-- `SECRET_KEY` — секретный ключ проекта
-- `ALLOWED_HOSTS` — см [документацию Django](https://docs.djangoproject.com/en/3.1/ref/settings/#allowed-hosts).
-- `DATABASE` — однострочный адрес к базе данных, например: `sqlite:///db.sqlite3`. Больше информации в [документации](https://github.com/jacobian/dj-database-url)
+3 variables are available: 
+- `DEBUG` — debug mode. Set to True to see debug information in case of an error.
+- `SECRET_KEY` - secret key of the project
+- `ALLOWED_HOSTS` - see [Django documentation](https://docs.djangoproject.com/en/3.1/ref/settings/#allowed-hosts). 
+- `DATABASE` — one-line address to the database, for example: `sqlite:///db.sqlite3`. More information in [documentation](https://github.com/jacobian/dj-database-url) 
 
-    Это позволяет легко переключаться между базами данных: PostgreSQL, MySQL, SQLite — без разницы, нужно лишь подставить нужный адрес.
-
-## Цели проекта
-
-Код написан в учебных целях — это урок в курсе по Python и веб-разработке на сайте [Devman](https://dvmn.org).
+    This makes it easy to switch between databases: PostgreSQL, MySQL, SQLite - it doesn't matter, you just need to substitute the right address. 
+    
